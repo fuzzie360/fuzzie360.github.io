@@ -1,0 +1,8 @@
+name: Fazli Sapuan's Blog
+description: Just another personal blog
+author: Fazli Sapuan
+author_email: fazli@sapuan.org
+baseurl: /
+url: http://fuzzie360.github.io
+paginate: 5
+permalink: pretty

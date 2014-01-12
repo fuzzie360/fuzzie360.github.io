@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+    <meta name="description" content="{{site.description}}"/>
+    <meta name="author" content="{{site.author}}"/>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{site.baseurl}}css/style.css">
+</head>
+<body>
+	<div class="main-content">
+		<div class="container">
+			<div class="small-header">
+                <a class="title" href="{{site.baseurl}}">{{ site.name }}</a>
+			</div>
+			<div class="article">
+				<div class="date">
+					{{ page.date | date_to_string }}
+				</div>
+				<div class="title"><h2>{{ page.title }}</h2></div>
+				<div class="content">
+					{{ content }}
+				</div>
+			</div>
+			<div class="byline">
+				{% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}
+			</div>
+		</div>
+	</div>
+	<div class="footer text-center">
+		<div class="content">
+			&copy; {{ page.date | date: "%Y" }} {{site.author}}<br>
+			Proudly published with Burogu
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>

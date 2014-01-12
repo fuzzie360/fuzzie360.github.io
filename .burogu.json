@@ -1,0 +1,19 @@
+{
+    "cloneUrl": "git@github.com:fuzzie360/fuzzie360.github.io.git",
+    "siteUrl": "http://fuzzie360.github.io",
+    "title": "Fazli Sapuan's Blog",
+    "description": "Just another personal blog",
+    "posts": [
+        {
+            "createdOn": "2014-01-12T07:40:08.791Z",
+            "updatedOn": "2014-01-12T07:40:08.791Z",
+            "publishedOn": "2014-01-12T07:40:08.791Z",
+            "title": "Welcome to Burogu",
+            "author": "Fazli Sapuan",
+            "content": "This is a sample post. Edit or remove this post to start blogging!"
+        }
+    ],
+    "drafts": [],
+    "pages": [],
+    "updateNumber": 0
+}
